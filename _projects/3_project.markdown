@@ -1,79 +1,52 @@
 ---
 layout: page
-title: project 3
-description: a project that redirects to another website
-img: /assets/img/7.jpg
-redirect: https://unsplash.com
+title: android_device_oneplus_onyx
+description: Android 7 for Moto G.
+img: https://vectorlogoseek.com/wp-content/uploads/2020/07/lineageos-vector-logo.png
 importance: 3
-category: work
+category: fun
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+[<i class="fab fa-github"></i> device tree](https://github.com/MasterAwesome/android_device_oneplus_onyx)\
+[<i class="fab fa-github"></i> kernel tree](https://github.com/MasterAwesome/android_kernel_oneplus_msm8974)\
+[<i class="fab fa-github"></i> vendor tree](https://github.com/MasterAwesome/android_vendor_oneplus_onyx)
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Author of the 3 repositories above to get lineageos support on Oneplus X `onyx`
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+<center>
+<img src="https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-x-3.jpg" alt="Xiaomi Mi A3" title="Xiaomi Mi A3" data-canonical-src="https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-x-3.jpg" style="max-width: 100%;">
+</center>
+<p>
+&nbsp;
+</p>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/1.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/3.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
+The OnePlus X (codenamed _"onyx"_) is a mid-range smartphone from OnePlus.
+It was announced on Oct 2015..
 
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+Basic   | Spec Sheet
+-------|-------------------------:
+CPU     | Quad-core 2.3 GHz Krait 400
+CHIPSET | Qualcomm Snapdragon 801
+GPU     | Adreno 330
+Memory  | 3GB RAM
+Shipped Android Version | 5.1.1 Oxygen OS
+Storage | 16GB
+MicroSD | Up to 128 GB (uses SIM 2 slot)
+Battery | 2525 mAh
+Dimensions | 5.51 x 2.72 x 0.27 in
+Camera  | 13 MP, f/2.2, phase detection autofocus, LED flash
 
+<p>
+&nbsp;
+</p>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/" target="_blank">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
+## Device manifest
+```xml
+<manifest>
+  <project name="MasterAwesome/android_device_oneplus_onyx" path="device/oneplus/onyx" remote="github" revision="master"/>
+  <project name="CyanogenMod/android_device_oppo_common" path="device/oppo/common" remote="github" />
+  <project name="MasterAwesome/android_kernel_oneplus_msm8974" path="kernel/oneplus/msm8974" remote="github" revision="5.1.1" />
+  <project name="MasterAwesome/android_vendor_oneplus_onyx" path="vendor/oneplus/onyx" remote="github" revision="master" />
+</manifest>
 ```

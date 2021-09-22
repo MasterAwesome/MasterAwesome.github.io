@@ -1,32 +1,3 @@
----
-layout: about
-title: about
-permalink: /
-description: Software Engineer / Cybersecurity Engineer
-profile:
-  align: right
-  image: prof_pic.jpg
-  address: >
-    <p>Boston, MA</p>
-
-news: true  # includes a list of news items
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
----
-
-Hi! I really like working on Computer Systems and low-level binary exploits. I play a bunch of CTFs and predominantly write C code. I am a graduate student from Northeastern University. I have worked on [AOSP](https://source.android.com/) code and [Qualcomm](https://www.qualcomm.com/) chipsets since around 2013. I enjoy writing code with performance in mind (~~performant code is ugly code~~). One of my coolest CTF exploit comes from defcon qualifiers 2021 [(write up here)](https://ctftime.org/writeup/20643) where I finished the challenge using a bash suid zero day to leak the bash binary and disassemble it instead of the intended solution where I was supposed to _ACTUALLY SOLVE MATH PROBLEMS?!?!?!?!_
-
-I work for Qualcomm as a _Systems Security Engineer_ working on implementing [DRM](https://en.wikipedia.org/wiki/Digital_rights_management), more specifically [Widevine](https://www.widevine.com/) features into a trusted applet that runs on [TrustZone](https://developer.arm.com/ip-products/security-ip/trustzone). Worked on security states **SEL0** and **SEL1**. If a bug I create breaks your Netflix then here's a nice [link](https://www.youtube.com/watch?v=sTMgX1PDGAE) for you to refer to.
-
-Apart from that I enjoy gaming. I play _Rainbow Six Siege_ professionally for the team at Northeastern University and played in LAN events back in India when COVID wasn't a thing.
-
-For fun, I used to contribute to XDA Developers. Most of my projects come from here. I am a Recognized Developer at XDA now. Profile link: [Here](https://forum.xda-developers.com/m/masterawesome.5321417/)
-
-If you're feeling really risky run this completely untrusted code that I have here. **TRUST ME** ;) [Handy download link](assets/c/x86_64_fun.c)
-
-<details>
-<summary> Click here to see code! <p>&nbsp;</p></summary>
-{% highlight c++ linenos %}
 /* Only works on x86_64 */
 #include <stdio.h>
 #include <stdlib.h>
@@ -174,7 +145,3 @@ int main(int argc, char **argv) {
     ((void (*)())fn)();
   }
 }
-{% endhighlight %}
-<!-- </pre>
-</details> -->
-<!-- Apparently don't need it -->
