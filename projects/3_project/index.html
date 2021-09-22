@@ -11,7 +11,7 @@
   Arvind Mukund
 
 
-  | blog
+  | android_device_oneplus_onyx
 
 </title>
 <meta name="description" content="Portfolio of Arvind Mukund.
@@ -37,7 +37,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛴</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/3_project/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -121,8 +121,6 @@
           
           
           
-          
-          
           <li class="nav-item ">
               <a class="nav-link" href="/projects/">
                 projects
@@ -164,56 +162,93 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2></h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">android_device_oneplus_onyx</h1>
+    <p class="post-description">Android 7 for Moto G.</p>
+  </header>
 
+  <article>
+    <p><a href="https://github.com/MasterAwesome/android_device_oneplus_onyx"><i class="fab fa-github"></i> device tree</a><br />
+<a href="https://github.com/MasterAwesome/android_kernel_oneplus_msm8974"><i class="fab fa-github"></i> kernel tree</a><br />
+<a href="https://github.com/MasterAwesome/android_vendor_oneplus_onyx"><i class="fab fa-github"></i> vendor tree</a></p>
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/2021/05/22/distill.html">a distill-style blog post</a></h3>
-        <p class="post-meta">May 22, 2021</p>
-        <p>an example of a distill-style blog post and main elements</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/2020/09/28/github-metadata.html">a post with github metadata</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/2020/09/28/twitter.html">a post with twitter</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>an example of a blog post with twitter</p>
-      </li>
-    
-  </ul>
+<p>Author of the 3 repositories above to get lineageos support on Oneplus X <code class="language-plaintext highlighter-rouge">onyx</code></p>
 
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blog">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blog - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="blog - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
+<center>
+<img src="https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-x-3.jpg" alt="Xiaomi Mi A3" title="Xiaomi Mi A3" data-canonical-src="https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-x-3.jpg" style="max-width: 100%;" />
+</center>
+<p>
+&nbsp;
+</p>
 
+<p>The OnePlus X (codenamed <em>“onyx”</em>) is a mid-range smartphone from OnePlus.
+It was announced on Oct 2015..</p>
 
+<table>
+  <thead>
+    <tr>
+      <th>Basic</th>
+      <th style="text-align: right">Spec Sheet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CPU</td>
+      <td style="text-align: right">Quad-core 2.3 GHz Krait 400</td>
+    </tr>
+    <tr>
+      <td>CHIPSET</td>
+      <td style="text-align: right">Qualcomm Snapdragon 801</td>
+    </tr>
+    <tr>
+      <td>GPU</td>
+      <td style="text-align: right">Adreno 330</td>
+    </tr>
+    <tr>
+      <td>Memory</td>
+      <td style="text-align: right">3GB RAM</td>
+    </tr>
+    <tr>
+      <td>Shipped Android Version</td>
+      <td style="text-align: right">5.1.1 Oxygen OS</td>
+    </tr>
+    <tr>
+      <td>Storage</td>
+      <td style="text-align: right">16GB</td>
+    </tr>
+    <tr>
+      <td>MicroSD</td>
+      <td style="text-align: right">Up to 128 GB (uses SIM 2 slot)</td>
+    </tr>
+    <tr>
+      <td>Battery</td>
+      <td style="text-align: right">2525 mAh</td>
+    </tr>
+    <tr>
+      <td>Dimensions</td>
+      <td style="text-align: right">5.51 x 2.72 x 0.27 in</td>
+    </tr>
+    <tr>
+      <td>Camera</td>
+      <td style="text-align: right">13 MP, f/2.2, phase detection autofocus, LED flash</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+&nbsp;
+</p>
+
+<h2 id="device-manifest">Device manifest</h2>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;manifest&gt;</span>
+  <span class="nt">&lt;project</span> <span class="na">name=</span><span class="s">"MasterAwesome/android_device_oneplus_onyx"</span> <span class="na">path=</span><span class="s">"device/oneplus/onyx"</span> <span class="na">remote=</span><span class="s">"github"</span> <span class="na">revision=</span><span class="s">"master"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;project</span> <span class="na">name=</span><span class="s">"CyanogenMod/android_device_oppo_common"</span> <span class="na">path=</span><span class="s">"device/oppo/common"</span> <span class="na">remote=</span><span class="s">"github"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;project</span> <span class="na">name=</span><span class="s">"MasterAwesome/android_kernel_oneplus_msm8974"</span> <span class="na">path=</span><span class="s">"kernel/oneplus/msm8974"</span> <span class="na">remote=</span><span class="s">"github"</span> <span class="na">revision=</span><span class="s">"5.1.1"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;project</span> <span class="na">name=</span><span class="s">"MasterAwesome/android_vendor_oneplus_onyx"</span> <span class="na">path=</span><span class="s">"vendor/oneplus/onyx"</span> <span class="na">remote=</span><span class="s">"github"</span> <span class="na">revision=</span><span class="s">"master"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/manifest&gt;</span>
+</code></pre></div></div>
+
+  </article>
 
 </div>
 

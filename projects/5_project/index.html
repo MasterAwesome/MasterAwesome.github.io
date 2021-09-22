@@ -11,7 +11,7 @@
   Arvind Mukund
 
 
-  | blog
+  | sync_sens
 
 </title>
 <meta name="description" content="Portfolio of Arvind Mukund.
@@ -37,7 +37,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛴</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/5_project/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -121,8 +121,6 @@
           
           
           
-          
-          
           <li class="nav-item ">
               <a class="nav-link" href="/projects/">
                 projects
@@ -164,56 +162,42 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2></h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">sync_sens</h1>
+    <p class="post-description">Software that synchronizes sensitivies across games</p>
+  </header>
 
+  <article>
+    <p><a href="https://github.com/MasterAwesome/sens_sync/"><i class="fab fa-github"></i> sens_sync</a></p>
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/2021/05/22/distill.html">a distill-style blog post</a></h3>
-        <p class="post-meta">May 22, 2021</p>
-        <p>an example of a distill-style blog post and main elements</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/2020/09/28/github-metadata.html">a post with github metadata</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/2020/09/28/twitter.html">a post with twitter</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>an example of a blog post with twitter</p>
-      </li>
-    
-  </ul>
+<p>Have you ever played 2 games and they have different mouse sensitivies?!?!?! WHAT THE F***. Sync_sens is used to synchronize sensitivities across games</p>
 
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blog">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blog - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="blog - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
+<h2 id="current-features">Current features</h2>
+<ul>
+  <li>Copy CS:GO to Siege config</li>
+  <li>Copy Siege to CS:GO config</li>
+  <li>Dry Run</li>
+</ul>
 
+<h3 id="usage">Usage</h3>
+<ul>
+  <li>The first 2 options re-writes the sensitivities without confirmation so make sure you’ve created a backup before executing</li>
+  <li>The Dry Run prints the current values of the sensitivities</li>
+</ul>
 
+<h4 id="example">Example</h4>
+<p><code class="language-plaintext highlighter-rouge">$python Main.py</code></p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Copy CS:GO to Siege
+2. Copy Siege to CS:GO
+3. Dry Run
+Enter your input: 3
+<span class="nt">------------------------------------------------------------------------------------------------------</span>
+Current CS vals <span class="o">[</span>sensitivity,zoom_sensitivity]: <span class="o">[</span>2.6, 0.88]
+Current siege vals <span class="o">[</span>sens, mouse_multiplier_unit, zoom, x_factor_aiming]: <span class="o">[</span>50, 0.003993, 100, 0.011175]
+<span class="nt">------------------------------------------------------------------------------------------------------</span>
+</code></pre></div></div>
+
+  </article>
 
 </div>
 
